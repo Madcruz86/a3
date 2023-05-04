@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0211e4 url(../imagens/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#area-logo img {
+    height: 80px;
+    
+}
+
+#area-logo {
+    border: 1px solid red;
+    padding: 15px;
+    width: 390px;
+}
+
+#area-logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#area-logo p {
+    display: inline;
+    font-size: 60px;
+    padding: 15px;
+   
+}
+
+#area-login {
+position: absolute;
+width: 500px;
+height: 700px;
+left: 980px;
+top: 70px;
+background: rgba(70, 167, 222, 0.6);
+border-radius: 60px;
+text-align: center;
+padding: 20px;
+}
+
+#formulario-login {
+    padding: 20px;
+    color: #fff;
+}
+
+#formulario-login form {
+    text-align: left;
+    padding: 20px;
+}
+
+#formulario-login input{
+    display: block;
+    text-align: center;
+    width: 390px;
+    background: rgba(10, 66, 62, 0.7);
+    border-radius: 50px;
+    height: 50px;
+}
+
+#formulario-login label {
+    margin-left: 20px;
+}
+
+#formulario-login input[type="submit"] {
+    width: 217px;
+    height: 50px;
+    background: rgba(10, 255, 240, 0.7);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+#maior{
+    font-size: 50px;
+    color: #fff;
+}
+
+
+
