@@ -7,6 +7,15 @@ body {
     background: #0211e4 url(../imagens/fundo.png);
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+
+
+#container {
+    width: 1440px;
+    margin: 0 auto;
+    height: 780px;
 }
 
 #area-logo img {
@@ -15,7 +24,8 @@ body {
 }
 
 #area-logo {
-    border: 1px solid red;
+    
+    
     padding: 15px;
     width: 390px;
 }
@@ -34,37 +44,50 @@ body {
 
 #area-login {
 position: absolute;
-width: 500px;
-height: 700px;
+width: 400px;
+height: 550px;
 left: 980px;
-top: 70px;
+top: 90px;
 background: rgba(70, 167, 222, 0.6);
 border-radius: 60px;
-text-align: center;
+
 padding: 20px;
 }
 
 #formulario-login {
     padding: 20px;
     color: #fff;
+    text-align: left;
+    font-size: 0.8em;
+    
 }
 
-#formulario-login form {
-    text-align: left;
-    padding: 20px;
+.centralizar {
+    text-align: center;
+    font-size: 2em;
+    
 }
+
 
 #formulario-login input{
     display: block;
-    text-align: center;
-    width: 390px;
+    width: 330px;
     background: rgba(10, 66, 62, 0.7);
     border-radius: 50px;
-    height: 50px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    border: 0ch;
+    
+    
 }
 
 #formulario-login label {
-    margin-left: 20px;
+    padding: 5px;
+    position: relative;
+    margin-left: 5px ;
+    
 }
 
 #formulario-login input[type="submit"] {
@@ -75,12 +98,58 @@ padding: 20px;
     color: #fff;
     font-size: 20px;
     margin: 0 auto;
+    border-color: rgba(10, 255, 240, 0.7);
 }
 
-#maior{
-    font-size: 50px;
+
+.titulo {
+    
+    width: 300px;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.menor {
+    
+    width: 300px;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.menor a {
+    
     color: #fff;
 }
 
+#descricao {
+    
+    font-size: 1.1em;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 100px;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px;
+}
 
+#descricao input[type="submit"] {
+    width: 217px;
+    height: 50px;
+    background: rgba(10, 255, 240, 0.7);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    border: rgba(10, 255, 240, 0.7);
 
+}
+
+.button {
+   margin-top: 50px;
+   text-align: center;
+
+}
