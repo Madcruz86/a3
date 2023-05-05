@@ -4,10 +4,14 @@
 }
 
 body {
-    background: #0211e4 url(../imagens/fundo.png) fixed;
+    background: url(../imagens/fundo.png) fixed;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: sans-serif;
+}
+
+#tela-index {
+    background: linear-gradient(114.08deg, #07005B -22.81%, rgba(0, 89, 79, 0.7) 122.81%);
 }
 
 #tela-login {
@@ -18,12 +22,18 @@ body {
 }
 
 
-
 #container {
     width: 1440px;
     margin: 0 auto;
     height: 780px;
 }
+
+
+  #logo-index {
+    
+    text-align: center;
+    color: white;
+  }
 
 #area-logo img {
     height: 80px;
