@@ -14,12 +14,7 @@ body {
     background: linear-gradient(114.08deg, #07005B -22.81%, rgba(0, 89, 79, 0.7) 122.81%);
 }
 
-#tela-login {
-    background: url(../imagens/fundo-login.png) fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: sans-serif;
-}
+
 
 
 #container {
@@ -272,7 +267,7 @@ footer {
 	width: 100%;
     height: 96px;
     left: 0px;
-    top: 640px;
+    top: 673px;
 	text-align: center;
 	position: absolute;
     background: rgba(39, 80, 134, 0.5);
