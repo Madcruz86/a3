@@ -160,9 +160,6 @@ nav ul a:hover {
     border-radius: 10px;
 }
 
-#barra-pesquisa input{
-    background: rgba(39, 80, 134, 0.5);
-}
 
 #conteudo {
     align-content: center;
@@ -186,21 +183,21 @@ nav ul a:hover {
 #barra-pesquisa {
     
     text-align: center;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 #barra-pesquisa input {
     box-sizing: border-box;
-
-    position: absolute;
+    position: relative;
+    margin: 0 auto;
     width: 525px;
     height: 50px;
-    left: 557px;
-    top: 158px;
+    padding: 10px;
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid #050725;
     border-radius: 10px;
     color: #fff;
+    font-size: 1.2em;
     
 }
 
@@ -431,6 +428,46 @@ footer a {
 
 footer div {
     padding: 5px;
+}
+
+input#enviar{
+    /* aqui você define o tamanho da fonte */
+    font-size: 18px;
+
+    /*
+    se constar somente FontAwesome em font-family aparece o ícone porém o texto
+    "informe seu e-mail" fica com a fonte padrão do navegador
+    font-family: "FontAwesome";
+    */
+
+    /* fazendo dessa forma aparece o ícone e o texto fica formatado */
+    font-family: "FontAwesome", Open Sans, Arial;
+
+    /* aqui você define a cor */
+    color: #FFF;
+
+    /* definindo outros atributos */
+    background-color: #00a0c4;
+    border: 1px solid #00a0c4;
+    border-radius: 4px;
+    width: 150px;
+    cursor: pointer;
+}
+
+/*
+* utilizando class + position
+*/
+#box_icone_busca{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    position: relative;
+    left: -39px;
+    top: 1px;
+}
+#icone_busca {
+    color: #000;
+    cursor: pointer;
 }
 
 
