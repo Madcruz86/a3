@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop + | Meu Perfil</title>
+    <link rel="stylesheet" href="css/estilo-principal.css">
+    <link rel="icon" type="image/png" href="imagens/logo.png"/>
+    <script src="https://kit.fontawesome.com/e93837fb12.js" crossorigin="anonymous"></script>
+</head>
+<body id="principal">
+    <header>
+        <div id="area-logo-principal">
+            <a href="principal.html"><img src="./imagens/logo.png" alt=""><p>Loop +</p></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="principal.html"><i class="fa-solid fa-house"></i> INÍCIO</a></li>
+                <li><a href="minhas-series.html"><i class="fa-solid fa-film"></i> MINHAS SERIES</a></li>
+                <li><a href="streaming.html"><i class="fa-brands fa-youtube"></i></i> STREAMING</a></li>
+                <li><a href="meu-perfil.html"><i class="fa-solid fa-user"></i> MEU PERFIL</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> SAIR</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div id="container">
+            
+            <div class="resumo-perfil">
+                <span class="item-resumo">
+                    <i class="fa-solid fa-film"></i><p>17 Séries</p>
+                </span>
+                <span class="item-resumo">
+                    <i class="fa-solid fa-film"></i><p>5 Plataformas de Streaming</p>
+                </span>
+            </div>
+
+            <div class="dados-usuario">
+                <div class="dado">
+                    <label for="">Nome:</label><input type="text" name="nome-usuario" id="nome-usuario" disabled>
+                </div>
+                <div class="dado">
+                    <label for="">E-mail:</label><input type="email" name="emil-usuario" id="email-usuario" disabled>
+                </div>
+                <div class="dado">
+                    <label for="">Data de Nascimento:</label><input type="date" name="data-usuario" id="data-usuario" disabled>
+                </div>
+
+                <div class="troca-senha">
+                    <h4>Trocar senha?</h4>
+                    <form id="form-troca-senha" action="">
+        
+                        <label for="senha-atual">Senha atual</label>
+                        <input id="senha-atual" type="password" name="senha-atual" required>
+        
+                        <div>
+                            <label for="senha-nova">Senha nova</label>
+                            <input id="senha-nova" type="password" name="senha-nova" required>
+                        </div>
+        
+                        <div>
+                            <label for="senha-confirmar">Confirme a nova senha</label>
+                            <input id="senha-confirmar" type="password" name="senha-confirmar" required>
+                        </div>
+                        <input id="botao-confirmar" type="submit" value="Confirmar">
+                    </form>
+                </div>
+
+
+            </div>
+        
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div>
+            <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff80;"></i></a>
+            <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff80;"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram" style="color: #ffffff80;"></i></a>
+        </div>
+        <div>
+            <p>&copy; Loop+</p>
+        </div>
+    </footer>
+    <nav class="nav-celular" >
+        <ul>
+            <li><a href="principal.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="minhas-series.html"><i class="fa-solid fa-film"></i></a></li>
+            <li><a href="streaming.html"><i class="fa-brands fa-youtube"></i></i></a></li>
+            <li><a href="meu-perfil.html"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+        </ul>
+    </nav>
+    <script src="js/perfil.js"></script>
+</body>
+</html>

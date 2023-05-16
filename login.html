@@ -1,63 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loop + - LOGIN</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Loop + | Login</title>
+    <link rel="stylesheet" href="css/estilo-login.css">
     <link rel="icon" type="image/png" href="imagens/logo.png"/>
     <script src="https://kit.fontawesome.com/e93837fb12.js" crossorigin="anonymous"></script>
 </head>
 <body id="tela-login">
-    <div id="container" style="height: 693px;">
-        <header>
-            <div id="area-logo">
-                <a href="index.html"><img src="./imagens/logo.png" alt=""><p>Loop +</h1></p></a>
+    <header>
+        <div id="area-logo">
+            <a href="index.html"><img src="./imagens/logo.png" alt=""><p>Loop +</h1></p></a>
+        </div>
+    </header>
+    <div id="container">
+
+            <div class="texto-login">
+                <p>Entre para Continuar</p>
+                <p class="info-cadastrar">Não esta cadastrado ainda?</p>
+                <a class="info-cadastrar" href="cadastro.html">Clique para cadastrar</a>
             </div>
-        </header>
-        <section>
-            <div id="area-login">
-                <div id="formulario-login">
-                    <div class="centralizar">
-                    <h2>LOGIN</h2><br>
-                    </div>
-                    <form action="">
+
+            <div id="area-login" class="area-form">
+                    <h2>Login</h2>
+                    <form id="form-login" action="">
                        
                         <label for="email">
-                            E-MAIL
+                            E-mail
                         </label>
-                        <input type="email" name="email" required><br><br>
+                        <input id="email" type="email" name="email" required><br><br>
 
                         <label for="pass">
-                            SENHA
+                            Senha
                         </label>
-                        <input type="password" name="pass" required><br><br>
-                        <label for="check" style="margin-left: -12px">Manter-se conectado</label>
-                        <input style="float: left;" type="checkbox" name="check" id="check">
-                        <a href="esqueci-senha.html" style="float: right; color: #fff">Esqueci minha senha</a>
-                        <input type="submit" value="Entrar" onclick="redireciona()">
-                        <script>
-                            function redireciona(){
-                                location.href="principal.html"
-                            }
-                        </script>
+                        <input id="senha" type="password" name="pass" required><br><br>
+                        <!-- <label for="check" style="margin-left: -12px">Manter-se conectado</label>
+                        <input style="float: left;" type="checkbox" name="check" id="check"> -->
+                        <p id="esqueci-senha">Esqueci minha senha</p>
+                        <input type="submit" value="Entrar">
+                        
                     </form>
-                </div>
             </div>
-            <section>
-            <div class="titulo">
-                <p>LOGIN</p> 
+
+
+            <div id="area-senha" class="area-form" hidden>
+                    <h2>Recuperar Senha</h2>
+                    
+                    <form id="form-senha" action="">
+                       
+                        <label for="email">
+                            E-mail
+                        </label>
+                        <input id="email" type="email" name="email" required><br><br>
+
+                        <label for="pass">
+                            Data de Nascimento
+                        </label>
+                        <input id="data" type="date" name="data" required><br><br>
+                        <!-- <label for="check" style="margin-left: -12px">Manter-se conectado</label>
+                        <input style="float: left;" type="checkbox" name="check" id="check"> -->
+                        <p id="voltar-login">Voltar para o login</p>
+                        <input type="submit" value="Enviar">
+                        
+                    </form>
             </div>
-            <div class="menor">
-                <p>Entre para Continuar</p><br><br>
-                <p>Não esta cadastrado ainda?<a href="cadastro.html">Clique para cadastrar</a></p>
+            <div class="texto-cadastro">
+                <p>Não esta cadastrado ainda?</p>
+                <a href="cadastro.html">Clique para cadastrar</a>
             </div>
-            <div class="menor">
-                <p>Um lugar onde você pode manter um registro das suas séries</p>
-            </div>
-        </section>
-    </div>
+        </div>
+        
+            
         <footer>
         <div>
             <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff80;"></i></a>
@@ -68,5 +83,11 @@
             <p>&copy; Loop+</p>
         </div>
     </footer>
+    <script src="/js/login.js"></script>
+    <!-- <script>
+        function redireciona(){
+            location.href="principal.html"
+        }
+    </script> -->
 </body>
 </html>

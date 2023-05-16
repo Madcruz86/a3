@@ -1,41 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loop + </title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo-index.css">
     <link rel="icon" type="image/png" href="imagens/logo.png"/>
     <script src="https://kit.fontawesome.com/e93837fb12.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="container" style="height: 692px;">
-        <header>
-            <div id="area-logo">
-                <a href="index.html"><img src="./imagens/logo.png" alt=""><p>Loop +</h1></p></a>
-            </div>
-        </header>
+    <header>
+        <div id="area-logo">
+            <a href="index.html"><img src="./imagens/logo.png" alt=""><p>Loop +</h1></p></a>
+        </div>
+    </header>
+    <div id="container">
             <div class="titulo">
-                <p>BEM VINDO(A) AO SEU PORTAL</p> 
-                <p>DE SÉRIES!</p><br>
+                <h3>BEM VINDO(A) AO SEU PORTAL DE SÉRIES!</h3> 
+                <p class="menor">Um lugar onde você pode manter um registro das suas séries</p>
             </div>
             <div id=area-botoes>
-                <form action="login.html">
-                    <div class= "entrar">
-                        <input type="submit" value="ENTRAR">
-                    </div>
-                </form>
-                <form action="cadastro.html">
-                    <div class= "entrar">
-                        <input type="submit" value="CADASTRAR">
-                    </div>
-                </form>
+                <button id="botao-entrar" data-funcao="login">Entrar</button>
+                <button id="botao-cadastrar" data-funcao="cadastro">Cadastrar</button>
             </div>
-            <div class="menor">
-                <p>Um lugar onde você pode manter um registro das suas séries</p>
-            </div>
-         </div>
     </div>
     <footer>
         <div>
@@ -47,5 +35,7 @@
             <p>&copy; Loop+</p>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

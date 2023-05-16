@@ -1,3 +1,6 @@
+html {
+    font-size: 16px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,41 +10,39 @@
 */
 
 body {
-    background: url(../imagens/fundo.png) fixed;
+    background: url('../imagens/fundo.png') fixed;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: sans-serif;
 }
 
 #principal {
-    background: url(../imagens/fundo-login.png) fixed;
+    background: url('../imagens/fundo-login.png') fixed;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: sans-serif;
 }
 
 header {
-    
-	padding: 15px 0;
-	height: 250px;
+	padding: 1em 0;
+	height: 15vh;
     font-weight: bold;
+    width: 100%;
     
 }
 
 #container {
-    
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
-}
-
-#area-logo img {
-    height: 80px;
-    
 }
 
 #area-logo{
     padding: 15px;
-    width: 390px;
+    width: fit-content;
+}
+
+#area-logo img {
+    height: 3em;
 }
 
 #area-logo a {
@@ -50,9 +51,10 @@ header {
 }
 
 #area-logo p {
+    vertical-align: top;
     display: inline;
-    font-size: 60px;
-    padding: 15px;
+    font-size: 3em;
+    /* padding: 1em; */
    
 }
 
@@ -67,8 +69,8 @@ header {
 }
 
 #area-botoes {
-    
-    position: absolute;
+    /* position: absolute; */
+    display: inline-block;
     width: 400px;
     height: 500px;
     left: 980px;
@@ -183,7 +185,7 @@ nav ul a:hover {
 #barra-pesquisa {
     
     text-align: center;
-    margin-top: 80px;
+
 }
 
 #barra-pesquisa input {
@@ -343,14 +345,22 @@ padding: 20px;
 
 
 .titulo {
-    
-    width: 500px;
-    margin-top: -100px;
-    margin-left: 30px;
+    display: inline-block;
+    width: 50%;
+    /* margin-top: 100px;
+    margin-left: 30px; */
     color: #fff;
-    font-size: 2em;
+    /* font-size: 2em; */
     font-weight: bold;
     
+}
+
+.titulo h3 {
+    font-size: 2em;
+}
+
+.titulo p {
+    font-size: 1em;
 }
 
 .menor {
