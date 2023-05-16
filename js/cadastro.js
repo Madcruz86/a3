@@ -16,5 +16,5 @@ formulario.addEventListener('submit', (evento) => {
     }
 
     localStorage.setItem('cadastro', JSON.stringify(cadastro))
-    location.href = 'login.html'
+    location.href = 'login.html'+'#CadastroEfetuado'
 })

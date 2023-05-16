@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loop + - STREAMINGS</title>
+    <title>Loop + | Meu Perfil</title>
     <link rel="stylesheet" href="css/estilo-principal.css">
     <link rel="icon" type="image/png" href="imagens/logo.png"/>
     <script src="https://kit.fontawesome.com/e93837fb12.js" crossorigin="anonymous"></script>
@@ -26,43 +26,53 @@
     </header>
     <div class="wrapper">
         <div id="container">
-        <div id="barra-pesquisa">
-            <input id="busca" type="text" placeholder="Pesquisar" />
-            <span id="box_icone_busca">
-                <i id="icone_busca" class="fa fa-search"></i>
-            </span>
-        </div>
-        <section>
-            <div class="categoria">
-                <h2>Minhas Séries</h2>
+            
+            <div class="resumo-perfil">
+                <span class="item-resumo">
+                    <i class="fa-solid fa-film"></i><p>17 Séries</p>
+                </span>
+                <span class="item-resumo">
+                    <i class="fa-solid fa-film"></i><p>5 Plataformas de Streaming</p>
+                </span>
             </div>
-            <div class="conteudo">
-                <div class="item" id="caixa-adicionar">
-                    <a href=""><p>+<br>
-                        Adicionar série a lista</p></a>
+
+            <div class="dados-usuario">
+                <div class="dado">
+                    <label for="">Nome:</label><input type="text" name="nome-usuario" id="nome-usuario" disabled>
                 </div>
-                    <img class="item" src="imagens/game.jpg" alt="" data-nome="Game of Thrones" data-genero="Ação" data-streaming='Netflix'>
-                    <img class="item" src="imagens/breaking.jpg" alt="" data-nome="Breaking Bed" data-genero="Ação" data-streaming='Netflix'>
-                    <img class="item" src="imagens/house.jpg" alt="" data-nome="House of the Dragon" data-genero="Ação" data-streaming='Netflix'>
-                    <img class="item" src="imagens/Two.jpg" alt="" data-nome="Two and a Half Men" data-genero="Comédia" data-streaming='Prime Video'>
-                    <img class="item" src="imagens/ranch.jpg" alt="">
-                    <img class="item" src="imagens/office.jpg" alt="">
-                    <img class="item" src="imagens/it.jpg" alt="">
-                    <img class="item" src="imagens/friends.png" alt="">
-                    <img class="item" src="imagens/robot.jpg" alt="">
-                    <img class="item" src="imagens/vikings.png" alt="">
-                    <img class="item" src="imagens/cards.jpg" alt="">
-                    <img class="item" src="imagens/kind.jpg" alt="">
-                    <img class="item" src="imagens/witcher.jpg" alt="">
-                    <img class="item" src="imagens/Alice.png" alt="">
-                    <img class="item" src="imagens/Dark.jpg" alt="">
-                    <img class="item" src="imagens/walking.jpg" alt="">
-                    <img class="item" src="imagens/big.jpg" alt="">
+                <div class="dado">
+                    <label for="">E-mail:</label><input type="email" name="emil-usuario" id="email-usuario" disabled>
+                </div>
+                <div class="dado">
+                    <label for="">Data de Nascimento:</label><input type="date" name="data-usuario" id="data-usuario" disabled>
+                </div>
+
+                <div class="troca-senha">
+                    <h4>Trocar senha?</h4>
+                    <form id="form-troca-senha" action="">
+        
+                        <label for="senha-atual">Senha atual</label>
+                        <input id="senha-atual" type="password" name="senha-atual" required>
+        
+                        <div>
+                            <label for="senha-nova">Senha nova</label>
+                            <input id="senha-nova" type="password" name="senha-nova" required>
+                        </div>
+        
+                        <div>
+                            <label for="senha-confirmar">Confirme a nova senha</label>
+                            <input id="senha-confirmar" type="password" name="senha-confirmar" required>
+                        </div>
+                        <input id="botao-confirmar" type="submit" value="Confirmar">
+                    </form>
+                </div>
+
+
             </div>
-        </section>
+        
         </div>
     </div>
-</div>
+    </div>
     <footer>
         <div>
             <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff80;"></i></a>
@@ -82,6 +92,6 @@
             <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
         </ul>
     </nav>
-    <script src="js/minhas-series.js"></script>
+    <script src="js/perfil.js"></script>
 </body>
 </html>

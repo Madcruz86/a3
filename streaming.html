@@ -1,64 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loop + - STREAMINGS</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo-principal.css">
     <link rel="icon" type="image/png" href="imagens/logo.png"/>
     <script src="https://kit.fontawesome.com/e93837fb12.js" crossorigin="anonymous"></script>
 </head>
 <body id="principal">
-    <div id="container">
-        <header>
-            <div id="area-logo-principal">
-                <a href="principal.html"><img src="./imagens/logo.png" alt=""><p>Loop +</h1></p></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><i class="fa-light fa-arrow-right-from-bracket" style="color: #ffffff;"></i> SAIR</a></li>
-                    <li><a href="meu-perfil.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i> MEU PERFIL</a></li>
-                    <li><a href="streaming.html"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></i> STREAMING</a></li>
-                    <li><a href="minhas-series.html"><i class="fa-solid fa-film" style="color: #ffffff;"></i> MINHAS SERIES</a></li>
-                </ul>
-            </nav>
-            <div id="barra-pesquisa">
-                <input id="busca" type="text" placeholder="Pesquisar" />
-                <span id="box_icone_busca">
-                    <i id="icone_busca" class="fa fa-search"></i>
-                </span>
-            </div>
-        </header>
+    <header>
+        <div id="area-logo-principal">
+            <a href="principal.html"><img src="./imagens/logo.png" alt=""><p>Loop +</h1></p></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="principal.html"><i class="fa-solid fa-house"></i> INÍCIO</a></li>
+                <li><a href="minhas-series.html"><i class="fa-solid fa-film"></i> MINHAS SERIES</a></li>
+                <li><a href="streaming.html"><i class="fa-brands fa-youtube"></i></i> STREAMING</a></li>
+                <li><a href="meu-perfil.html"><i class="fa-solid fa-user"></i> MEU PERFIL</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> SAIR</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div id="container">
+        <div id="barra-pesquisa">
+            <input id="busca" type="text" placeholder="Pesquisar" />
+            <span id="box_icone_busca">
+                <i id="icone_busca" class="fa fa-search"></i>
+            </span>
+        </div>
         <section>
-            <p class="link-esquerda">
-                <a href="">Ver mais</a>
-            </p>
-            <h2>STREAMINGS</h2>
-            <hr>
-            <div id="conteudo">
+            <div class="categoria">
+                <h2>Plataformas de Streaming</h2>
+            </div>
+            <div class="conteudo" id="conteudo">
                 <div class="item" id="caixa-adicionar">
                     <a href=""><p>+<br>
                         Adicionar streaming a lista</p></a>
                 </div>
-                <div class="item">
-                    <a href=""><img src="imagens/netflix.jpg" alt="" style="width: 200px; height: 300px;"></a>
-                </div>
-                <div class="item">
-                    <a href=""><img src="imagens/disney.jpg" alt="" style="width: 200px; height: 300px;"></a>
-                </div>
-                <div class="item">
-                    <a href=""><img src="imagens/amazon.png" alt="" style="width: 200px; height: 300px;"></a>
-                </div>
-                <div class="item">
-                    <a href=""><img src="imagens/apple.png" alt="" style="width: 200px; height: 300px;"></a>
-                </div>
-                <div class="item">
-                    <a href=""><img src="imagens/paramount.png" alt="" style="width: 200px; height: 300px;"></a>
-                </div>
+                    <img src="imagens/netflix.jpg" class="item" alt="" data-nome="Netflix">
+                    <img src="imagens/disney.jpg" class="item" alt="" data-nome="Disney">
+                    <img src="imagens/amazon.png" class="item" alt="" data-nome="Prime Video">
+                    <img src="imagens/apple.png" class="item" alt="" data-nome="Apple Tv+">
+                    <img src="imagens/paramount.png" class="item" alt="" data-nome="Paramount">
             </div>
         </section>
         </div>
+    </div>
     </div>
     <footer>
         <div>
@@ -70,5 +61,15 @@
             <p>&copy; Loop+</p>
         </div>
     </footer>
+    <nav class="nav-celular" >
+        <ul>
+            <li><a href="principal.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="minhas-series.html"><i class="fa-solid fa-film"></i></a></li>
+            <li><a href="streaming.html"><i class="fa-brands fa-youtube"></i></i></a></li>
+            <li><a href="meu-perfil.html"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+        </ul>
+    </nav>
+    <script src="js/streaming.js"></script>
 </body>
 </html>
